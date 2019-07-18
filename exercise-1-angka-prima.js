@@ -2,6 +2,7 @@
 function angkaPrima(angka) {
     var count = 0; 
     for( var i = 2; i < angka; i ++) {
+        // var i start dari 2, karena 1 dan 0 bukan angka prima
         if ( angka%i === 0) {
             count++;
         }
