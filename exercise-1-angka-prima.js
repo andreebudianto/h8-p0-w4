@@ -1,14 +1,17 @@
 
 function angkaPrima(angka) {
     var count = 0; 
-    for( var i = 2; i < angka; i ++) {
-        // var i start dari 2, karena 1 dan 0 bukan angka prima
-        if ( angka%i === 0) {
-            count++;
+    if ( angka > 1) {
+        for( var i = 2; i < angka; i ++) {
+            if ( angka%i === 0) {
+                count++;
+            }
+        } if ( count === 0) {
+            return true;
+        } else if (count > 0) {
+            return false;
         }
-    } if ( count === 0) {
-        return true;
-    } else if (count > 0) {
+    } else {
         return false;
     }
 }
