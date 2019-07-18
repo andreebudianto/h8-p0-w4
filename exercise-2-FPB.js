@@ -7,13 +7,11 @@ function fpb(angka1, angka2) {
     angka1 = angka2;
     angka2 = temp;
   }
-  else if(angka2 > angka1) {
-    sisa = angka2%angka1;
+  sisa = angka2%angka1;
     while (sisa !== 0) {
       angka2 = angka1;
       angka1 = sisa;
       sisa = angka2%angka1;
-    } 
   } return angka1;
 }
 
