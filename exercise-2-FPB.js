@@ -1,3 +1,4 @@
+// FPB dengan Euclid Algorithm
 var sisa = '';
 var temp = '';
 function fpb(angka1, angka2) {
