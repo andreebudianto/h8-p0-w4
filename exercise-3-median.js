@@ -4,16 +4,6 @@ function cariMedian(arr) {
   var i = 0;
   var result ='';
 
-  while ( i < arr.length) {
-    if(arr[i] > arr[i+1]) {
-      temp = arr[i];
-      arr[i] = arr[i+1];
-      arr[i+1] = temp;
-      i = 0;
-    } else {
-      i++;
-    }
-  }
   if(arr.length %2 === 0) {
     result += (((arr[(arr.length/2)-1]) + arr[(arr.length/2)])/2);
     
