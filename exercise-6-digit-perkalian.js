@@ -1,7 +1,7 @@
 
 function digitPerkalianMinimum(angka) {
   var result  = [];
-  for ( var i = 1; i < 10; i ++) {
+  for ( var i = 1; i <= angka; i ++) {
     if(angka%i === 0) {
         result.push(angka/i);
         result.push(i);        
@@ -26,3 +26,4 @@ console.log(digitPerkalianMinimum(90)); // 3
 console.log(digitPerkalianMinimum(20)); // 2
 console.log(digitPerkalianMinimum(179)); // 4
 console.log(digitPerkalianMinimum(1)); // 2
+console.log(digitPerkalianMinimum(999 * 999)); // 6
