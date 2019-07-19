@@ -1,20 +1,23 @@
 function changeMe(arr) {
-    
   var result = {};
-  for ( var i = 0; i < arr.length; i ++) {
-      result['firstName'] = arr[i][0];
-      result['lastName'] = arr[i][1];
-      result['gender'] = arr[i][2];
-      if( arr[i][3] < 2019) {
-          result['age'] = 2019 - arr[i][3];
-      } else {
-          result['age'] = 'Invalid Birth Year';
-      }
-      console.log((i+1) + '. ' + result.firstName +' '+ result.lastName);
-      console.log(result);
-      
+  if( arr.length == 0) {
+      console.log('""');
+  }
+  else {
+    for ( var i = 0; i < arr.length; i ++) {
+        result['firstName'] = arr[i][0];
+        result['lastName'] = arr[i][1];
+        result['gender'] = arr[i][2];
+        if( arr[i][3] < 2019) {
+            result['age'] = 2019 - arr[i][3];
+        }
+        else {
+            result['age'] = 'Invalid Birth Year';
+        }
+        console.log((i+1) + '. ' + result.firstName +' '+ result.lastName);
+        console.log(result);
+    }
   } 
-
 }
 
 // TEST CASES
