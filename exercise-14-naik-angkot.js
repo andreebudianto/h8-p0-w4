@@ -7,10 +7,8 @@ function naikAngkot(arrPenumpang) {
     result['naikDari'] = arrPenumpang[i][1];
     result['tujuan'] = arrPenumpang[i][2];
     result['bayar'] = ((rute.indexOf(arrPenumpang[i][2]))-(rute.indexOf(arrPenumpang[i][1])))*2000;
-        
     display.push(result);
   }
-  
   return display;
 }
   
